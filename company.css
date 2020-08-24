@@ -31,14 +31,10 @@ body {
   }
 }
 
-header {
-  height: 70px;
-}
-
 header .title {
-  float: left;
+  text-align: center;
   padding-left: 3%;
-  font-size: 120%;
+  font-size: 300%;
   color: forestgreen;
   text-shadow: 5px 5px 1px rgba(240, 240, 144, 0.673);
   -webkit-transition: all 0.3s 0s ease;
@@ -54,13 +50,14 @@ header .title:hover {
 }
 
 header .header {
-  float: right;
+  text-align: center;
 }
 
 header .header a {
   padding-left: 10px;
   padding-right: 10px;
   text-decoration: none;
+  font-size: 200%;
   color: #333333;
   margin-bottom: 5px;
 }
@@ -75,18 +72,13 @@ header .header a:active {
   color: #333333;
 }
 
-header .clear {
-  clear: right;
-  clear: left;
-}
-
 body div {
   position: relative;
 }
 
 body div .park {
   width: 100%;
-  height: 400px;
+  height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 0 70%;
@@ -95,7 +87,7 @@ body div .park {
 
 body div .kiss {
   width: 100%;
-  height: 400px;
+  height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 0 30%;
@@ -103,15 +95,16 @@ body div .kiss {
 }
 
 body div .inimg {
-  width: 200px;
-  height: 20%;
+  width: 600px;
+  height: 30%;
   opacity: 0.8;
   background: #fff;
   position: absolute;
   top: 10%;
-  right: 10%;
+  left: 20%;
   border-top: 4px forestgreen solid;
   text-align: center;
+  font-size: 200%;
 }
 
 body div .inimg:hover {
@@ -120,12 +113,19 @@ body div .inimg:hover {
 }
 
 body div .img-kiss {
-  top: 60%;
-  right: 10%;
+  top: 40%;
+  right: 5%;
   background-color: black;
-  height: 25%;
   color: yellow;
-  width: 200px;
+  width: 250px;
+  height: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  opacity: 0.8;
+  position: absolute;
+  border-top: 4px forestgreen solid;
+  text-align: center;
+  font-size: 200%;
 }
 
 body div .img-kiss:hover {
@@ -135,31 +135,32 @@ body div .img-kiss:hover {
 
 body .couple-title {
   text-align: center;
-  font-size: 200%;
+  font-size: 300%;
 }
 
 body .couple-name {
   text-align: center;
   color: forestgreen;
-  font-size: 130%;
+  font-size: 200%;
 }
 
 body .couple-contents {
   width: 95%;
-  height: 300px;
+  height: 1000px;
   background: #fff;
   border: 2px #E6E6E6 solid;
   border-top: 4px forestgreen solid;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  text-align: center;
 }
 
 body .couple-contents .couple-img {
   display: inline-block;
   margin: 0.5%;
-  width: 40%;
-  height: 95%;
+  width: 100%;
+  height: 50%;
   -o-object-fit: cover;
      object-fit: cover;
   border: 1px grey solid;
@@ -170,7 +171,6 @@ body .couple-contents .couple-img:hover {
 }
 
 body .couple-contents .couple-right {
-  width: 55%;
   text-align: center;
   display: inline-block;
   vertical-align: top;
@@ -178,11 +178,13 @@ body .couple-contents .couple-right {
 
 body .couple-contents .couple-right .couple-subtitle {
   display: inline-block;
-  font-size: 120%;
+  font-size: 200%;
   border-bottom: 1px forestgreen dashed;
+  margin-bottom: 0;
 }
 
 body .couple-contents .couple-right .couple-subcontents {
+  font-size: 150%;
   display: inline-block;
 }
 
@@ -193,9 +195,9 @@ body .couple-contents .couple-right .inline {
 
 body .couple-contents .couple-right .inline .couple-first {
   display: inline-block;
-  width: 25%;
-  margin-right: 5%;
-  height: 100px;
+  width: 30%;
+  margin-right: 2%;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   border: 1px grey solid;
@@ -207,9 +209,9 @@ body .couple-contents .couple-right .inline .couple-first:hover {
 
 body .couple-contents .couple-right .inline .couple-half {
   display: inline-block;
-  width: 25%;
-  margin-right: 5%;
-  height: 100px;
+  width: 30%;
+  margin-right: 2%;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   border: 1px grey solid;
@@ -221,9 +223,8 @@ body .couple-contents .couple-right .inline .couple-half:hover {
 
 body .couple-contents .couple-right .inline .couple-year {
   display: inline-block;
-  width: 25%;
-  margin-right: 5%;
-  height: 100px;
+  width: 30%;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   border: 1px grey solid;
@@ -235,20 +236,20 @@ body .couple-contents .couple-right .inline .couple-year:hover {
 
 body .couple-contents .couple-right .inline .inline-p {
   display: inline-block;
-  width: 25%;
-  margin-right: 5%;
-  font-size: 80%;
+  width: 30%;
+  margin-right: 2%;
+  font-size: 150%;
 }
 
 body .news {
   background-color: white;
-  height: 500px;
+  height: 900px;
 }
 
 body .news .scroll {
   margin-left: 5%;
   margin-right: 5%;
-  height: 180px;
+  height: 500px;
   overflow: scroll;
 }
 
@@ -264,7 +265,7 @@ body .mina {
 body .mina .mina-back {
   margin-top: 0;
   width: 100%;
-  height: 650px;
+  height: 1300px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 20% 0%;
@@ -273,7 +274,17 @@ body .mina .mina-back {
 
 body .mina .mina-title {
   position: absolute;
-  top: 5%;
+  top: 50px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 300%;
+  color: white;
+}
+
+body .mina .mina-subtitle {
+  position: absolute;
+  top: 150px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -281,22 +292,12 @@ body .mina .mina-title {
   color: white;
 }
 
-body .mina .mina-subtitle {
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-size: 130%;
-  color: white;
-}
-
 body .mina .mina-contents {
   position: absolute;
-  top: 30%;
+  top: 250px;
   right: 5%;
   width: 90%;
-  height: 400px;
+  height: 1000px;
   background-color: white;
 }
 
@@ -306,8 +307,8 @@ body .mina .mina-contents .mina-img {
   margin-top: 5%;
   margin-bottom: 5%;
   margin-left: 5%;
-  width: 40%;
-  height: 80%;
+  width: 90%;
+  height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 0 10%;
@@ -317,8 +318,9 @@ body .mina .mina-contents .mina-img {
 body .mina .mina-contents .mina-right {
   vertical-align: top;
   margin-top: 5%;
-  width: 50%;
+  width: 100%;
   display: inline-block;
+  font-size: 180%;
 }
 
 body .mina .mina-contents .mina-right .mina-catchcopy {
@@ -338,7 +340,7 @@ body .mina .mina-contents .mina-right .mina-name {
 body .mina .mina-contents .mina-right .mina-introduction {
   margin-left: 10%;
   width: 80%;
-  height: 150px;
+  height: 200px;
   overflow: scroll;
 }
 
@@ -348,14 +350,24 @@ body .kyoji {
 
 body .kyoji .kyoji-back {
   width: 100%;
-  height: 500px;
+  height: 1200px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 body .kyoji .kyoji-title {
   position: absolute;
-  top: 5%;
+  top: 50px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 300%;
+  color: white;
+}
+
+body .kyoji .kyoji-subtitle {
+  position: absolute;
+  top: 150px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -363,30 +375,20 @@ body .kyoji .kyoji-title {
   color: white;
 }
 
-body .kyoji .kyoji-subtitle {
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-size: 120%;
-  color: white;
-}
-
 body .kyoji .kyoji-contents {
   position: absolute;
   left: 5%;
-  top: 30%;
+  top: 250px;
   width: 90%;
-  height: 300px;
+  height: 900px;
   background-color: white;
 }
 
 body .kyoji .kyoji-contents .kyoji-img {
   vertical-align: top;
   display: inline-block;
-  width: 40%;
-  height: 80%;
+  width: 90%;
+  height: 400px;
   margin-left: 5%;
   margin-top: 3%;
   -o-object-fit: cover;
@@ -397,7 +399,7 @@ body .kyoji .kyoji-contents .kyoji-img {
 
 body .kyoji .kyoji-contents .kyoji-right {
   display: inline-block;
-  width: 45%;
+  width: 90%;
   vertical-align: top;
   margin-top: 5%;
   padding-left: 5%;
@@ -406,25 +408,26 @@ body .kyoji .kyoji-contents .kyoji-right {
 body .kyoji .kyoji-contents .kyoji-right .kyoji-name {
   width: 90%;
   text-align: center;
+  font-size: 200%;
 }
 
 body .kyoji .kyoji-contents .kyoji-right .kyoji-introduction {
   width: 90%;
   border-bottom: 1px solid  #CCCCCC;
-  font-size: 80%;
+  font-size: 150%;
 }
 
 body .friends {
   text-align: center;
-  height: 600px;
+  height: 1000px;
 }
 
 body .friends .friends-title {
-  font-size: 200%;
+  font-size: 300%;
 }
 
 body .friends .friends-subtitle {
-  font-size: 120%;
+  font-size: 200%;
   color: forestgreen;
 }
 
@@ -434,7 +437,7 @@ body .friends .friends-contents {
   left: 15%;
   vertical-align: middle;
   width: 70%;
-  height: 300px;
+  height: 650px;
   border: 1px #CCCCCC solid;
   background-color: white;
 }
@@ -442,39 +445,42 @@ body .friends .friends-contents {
 body .friends .friends-contents .friends-img {
   vertical-align: top;
   display: inline-block;
-  width: 40%;
-  height: 80%;
+  width: 80%;
+  height: 300px;
   margin-top: 5%;
-  margin-left: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 body .friends .friends-contents .friends-right {
-  margin-left: 5%;
-  width: 45%;
+  margin-left: 10%;
+  width: 80%;
   vertical-align: top;
   display: inline-block;
 }
 
 body .friends .friends-contents .friends-right .friends-name {
-  margin-top: 20%;
+  margin-top: 10%;
   color: forestgreen;
   width: 80%;
   border-bottom: 1px forestgreen dashed;
+  font-size: 200%;
 }
 
 body .friends .friends-contents .friends-right .friends-introduction {
   width: 80%;
   text-align: left;
+  font-size: 150%;
 }
 
 body .allow-left {
   display: inline-block;
   position: absolute;
-  top: 120px;
-  left: 5%;
-  width: 5%;
+  top: 300px;
+  left: 2%;
+  width: 10%;
   height: auto;
   margin-right: 5%;
 }
@@ -487,9 +493,9 @@ body .allow-left:hover {
 body .allow-right {
   display: inline-block;
   position: absolute;
-  top: 120px;
-  right: 5%;
-  width: 5%;
+  top: 300px;
+  right: 2%;
+  width: 10%;
   height: auto;
   margin-left: 5%;
 }
@@ -522,7 +528,7 @@ body .overlay {
 }
 
 body .overlay .contents {
-  width: 60%;
+  width: 80%;
   position: fixed;
   height: auto;
   top: 50%;
@@ -536,11 +542,10 @@ body .overlay .contents {
 }
 
 footer {
-  margin-top: 0;
   background-color: forestgreen;
   height: 50px;
-  margin-top: -5%;
-  padding-top: 5%;
+  margin-top: -8%;
+  font-size: 200%;
 }
 
 footer .foot {
